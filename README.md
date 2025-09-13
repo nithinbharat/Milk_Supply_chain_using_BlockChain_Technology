@@ -92,9 +92,6 @@ Publications in IJCRT (2025) & MAT Journals (2025)
 
 📧 Email: bharatnithin@gmail.com
 
-🌐 LinkedIn
- | GitHub
-
 📜 License
 
 This project is licensed under the MIT License.
