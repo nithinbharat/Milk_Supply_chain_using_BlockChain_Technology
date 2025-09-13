@@ -1,101 +1,121 @@
-# MilkyCHAIN
-The milk supply chain - Udacity nano degree project for Blockchain Architect
+# 🥛 Blockchain-based Milk Supply Chain ⛓️
 
+The project implements a **blockchain-enabled supply chain system** for milk, ensuring transparency, authenticity, and traceability from the **cow to the consumer**.  
+It was published as both a **research paper** and an **implementation paper**, demonstrating the real-world applicability of blockchain in agricultural supply chains.
 
-## Project write-up - UML
-Project rubric https://review.udacity.com/#!/rubrics/1710/view
+---
 
+## 📑 Publications & Resources
+- **Research Paper**: *A Study of Milk Supply Chain Using Blockchain Technology*, IJCRT, Jan 2025  
+- **Implementation Paper**: *Milk Supply Chain Using Blockchain Technology*, MAT Journals, Jun 2025  
 
-The project is intended to track the authenticity of the milk produced, from the cow to the bottle.
+📂 All project documents, certificates, and reports:  
+👉 [Google Drive Link](https://drive.google.com/drive/folders/1YkcJH4HGull5lm_LbcP_VZj3QXKY8M-6?usp=drive_link)
 
-Here you find the supply chain workflow that has been implemented
-![Sequence Diagram](architecture/UdacityMilkyCHAIN_Sequence_Diagram.png)
+---
 
-Other diagrams are in /architecture folder.
+## 📌 Project Write-up – UML
+The supply chain workflow implemented in this project:  
 
-## Project write-up - Libraries 
-Following libraries has been used in this project:
-*   Roles.sol : it allows managing addresses assigned to a Role (credit to Open-Zeppelin). 
-*   Ownable.sol : it provides basic authorization control functions, this simplifies the implementation of "user permissions". (credit to Open-Zeppelin). 
-*   Migrations.sol : it simplifies contract deployment (credit to Truffle). 
+![Sequence Diagram](architecture/UdacityMilkyCHAIN_Sequence_Diagram.png)  
 
-## Getting Started
+Other architecture diagrams are in the `/architecture` folder.
+
+---
+
+## 📚 Project Write-up – Libraries
+This project uses the following smart contract libraries (credits to **OpenZeppelin** & **Truffle**):
+- **Roles.sol** → Manages role-based access  
+- **Ownable.sol** → Provides owner-based permissions  
+- **Migrations.sol** → Simplifies deployment process  
+
+---
+
+## ⚙️ Getting Started
 These instructions will install requirements and allow you to execute the code.
 
-Using:
-- Truffle v4.1.15
-- node v10.10.0
+**Environment (recommended):**
+- Node.js v14+ (original tested on Node v10.10.0)  
+- Truffle v5+ (original used Truffle v4.1.15)  
+- Ganache CLI or Ganache UI  
+
+### Install Dependencies
+```bash
+npm install
+Run Tests
+
+Start Ganache in one terminal:
+
+ganache-cli
 
 
-Install requirements 
-```
-npm install 
-```
+Run smart contract tests:
 
-Please be aware that ganache-cli and truffle (version 4) has been used.
+truffle test
 
 
-- To test the contract start ```ganache-cli``` and issue the command ```truffle test```.
-All tests should pass.
-``` 
-$>truffle test
-Using network 'development'.
-ganache-cli accounts used here...
-Contract Owner: accounts[0]  0xfe3a86ce9eee63008417ba772ae0719e36e9edb7
-Farmer: accounts[1]  0x4de5ef92a1f85db578d6d9f11782d080159e7c69
-Transporter: accounts[2]  0x8e42ecd78331a4da8949528190a1a72576c88ec4
-BottlingFarm: accounts[3]  0x8d943ca32a194eb36ee7e4d5de7c4249dcefbe6b
-Distributor: accounts[4]  0x2fe33b13a72e40d979c8683d75cc28757cb631ff
-Consumer: accounts[5]  0xc82e3d5b4c84664e5e506fde45ae1ab6be427513
+✅ Expected output:
 
+Deploy SupplyChain and Register Actors
 
-  Contract: SupplyChain
-    ✓ 0. Deploy SupplyChain and Register Actors (268ms)
-    ✓ Testing smart contract function milkCow() that allows a farmer to get milk (226ms)
-    ✓ Testing smart contract function refrigerate() that allows a farmer to refrigerate milk (110ms)
-    ✓ Testing smart contract function onFarmInspect() that allows a farmer to inspect milk (85ms)
-    ✓ Testing smart contract function pick() that allows a trasponrter to get milk (130ms)
-    ✓ Testing smart contract function ship() that allows a trasponrter to release milk (73ms)
-    ✓ Testing smart contract function onBottlingFarmInspect() that allows bottling farm to inspect milk (122ms)
-    ✓ Testing smart contract function bottle() that allows a bottling farm to bottle milk (74ms)
-    ✓ Testing smart contract function pack() that allows a bottling farm to pack bottles (76ms)
-    ✓ Testing smart contract function delivery() that allows a bottling farm to deliver packed bottles (77ms)
-    ✓ Testing smart contract function sellItem() that allows distributor to sell milk (168ms)
-    ✓ Testing smart contract function buy() that allows consumer to buy milk (1705ms)
-    ✓ Testing smart contract function consumer() that allows a consumer to finally drink his milk! (74ms)
+Execute functions: milkCow, refrigerate, onFarmInspect, pick, ship, bottle, pack, delivery, sellItem, buy, consumer
 
-  13 passing (3s)
+All tests should pass
 
-```
-- To deploy the contract, with ganache-cli still running, issue the command ```truffle deploy```.
-- Install Metamask plugin for chrome or firefox and connect it to ganache blockchain
-- When your web app interacts with your wallet, Metamask will ask for confirmation. 
-**Please note that all the smart contract methods are invoked by the current wallet selected in Metamask**
+Deploy Contracts
 
-## UI 
-You can interact with the smart contract by running the user interface (ganache-cli shoul always be running)
-- To start the interface
-```
-npm run dev
-```
-- open a Chrome browser instance with Metamask configured
-- To assign roles, set the addresses and the role to assign:
-![AssignRoles](images/assignRoles.png)
-- To run supplychain commands, set the upc value, then hit the command choiching the right wallet address in MetaMask. Every button color correspond to a different role:
-![RunCommand](images/runCommand.png)
+With Ganache running:
 
-- To retriew the authenticity of the milk and gather its informations, fill the UPC, hit "Fetch Data 2" and see the form:
-![RunCommand](images/getInfos.png)
-![Infos](images/Infos.png)
+truffle migrate
 
-- All other infos (like errors) are logged in browser console
-- Transaction history is on the bottom of the page
+🌐 UI
 
+The following screenshots demonstrate the successful execution of the blockchain-based milk supply chain system:
 
-## Deployed Contract on RINKEBY
-*   Contract ID : 0x84E8edF4072165f86EF729B21E55656Bfdea1f91
-*   Transaction ID:  0x45b106f553e9e94326b8cf842253dd506c913129f315fbe0c94f45be65d0af82
-*   Etherscan view: https://rinkeby.etherscan.io/address/0x84e8edf4072165f86ef729b21e55656bfdea1f91#code
+1. **Smart Contract Deployment**  
+   ![Smart Contract Deployment](images/smart_contract_deployment.png)
+
+2. **Ganache Transaction Logs**  
+   ![Ganache Transaction Logs](images/ganache_transaction_logs.png)
+
+3. **MetaMask Transaction Authorization**  
+   ![MetaMask Transaction Authorization](images/metamask_transaction_authorization.png)
+
+4. **Smart Contract Compilation**  
+   ![Smart Contract Compilation](images/smart_contract_compilation.png)
+
+5. **Final Blockchain Transaction**  
+   ![Final Blockchain Transaction](images/final_blockchain_transaction.png)
+
+🔑 Roles in the System
+
+👨‍🌾 Farmer → Harvests, refrigerates, inspects milk
+
+🚚 Transporter → Picks up & ships
+
+🏭 Bottling Farm → Inspects, bottles, packs, delivers
+
+🏪 Distributor → Sells packaged milk
+
+🛒 Consumer → Buys & verifies authenticity
+
+🌍 Deployed Contract on Rinkeby
+
+Contract ID: 0x84E8edF4072165f86EF729B21E55656Bfdea1f91
+
+Transaction ID: 0x45b106f553e9e94326b8cf842253dd506c913129f315fbe0c94f45be65d0af82
+
+Etherscan View: Click Here
+
+👨‍💻 Author
+
+S. Nithin
+
+Publications in IJCRT & MAT Journals
+
+📜 License
+
+This project is licensed under the MIT License.
 
 
 
