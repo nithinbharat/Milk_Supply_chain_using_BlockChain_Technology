@@ -72,15 +72,20 @@ truffle migrate
 
 The following screenshots demonstrate the successful execution of the blockchain-based milk supply chain system:
 
-1. Smart Contract Deployment
+1. **Smart Contract Deployment**  
+   ![Smart Contract Deployment](images/smart_contract_deployment.png)
 
-2. Ganache Transaction Logs
+2. **Ganache Transaction Logs**  
+   ![Ganache Transaction Logs](images/ganache_transaction_logs.png)
 
-3. MetaMask Transaction Authorization
+3. **MetaMask Transaction Authorization**  
+   ![MetaMask Transaction Authorization](images/metamask_transaction_authorization.png)
 
-4. Smart Contract Compilation
+4. **Smart Contract Compilation**  
+   ![Smart Contract Compilation](images/smart_contract_compilation.png)
 
-5. Final Blockchain Transaction
+5. **Final Blockchain Transaction**  
+   ![Final Blockchain Transaction](images/final_blockchain_transaction.png)
 
 🔑 Roles in the System
 
