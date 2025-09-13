@@ -68,41 +68,12 @@ With Ganache running:
 
 truffle migrate
 
-## 🌐 UI
-
-The following screenshots demonstrate the successful execution of the blockchain-based milk supply chain system:
-
-1. **Smart Contract Deployment**  
-   <img width="1483" height="1118" alt="smart_contract_deployment png" src="https://github.com/user-attachments/assets/89cdb310-b792-4c0c-9cc8-ff15937deebe" />
-
-
-2. **Ganache Transaction Logs**  
-   <img width="1492" height="850" alt="ganache_transaction_logs png" src="https://github.com/user-attachments/assets/35f28f80-8c21-45ab-b472-3e8df2d7f73c" />
-
-
-3. **MetaMask Transaction Authorization**  
-   <img width="1541" height="731" alt="metamask_transaction_authorization png" src="https://github.com/user-attachments/assets/5db76616-52cd-45b2-9c80-020d92570747" />
-
-
-4. **Smart Contract Compilation**  
-   <img width="1684" height="1030" alt="smart_contract_compilation png" src="https://github.com/user-attachments/assets/ef84d89f-ca8c-44eb-99a9-d6147b452049" />
-
-
-5. **Final Blockchain Transaction**  
-   <img width="1568" height="979" alt="final_blockchain_transaction png" src="https://github.com/user-attachments/assets/ed88d2a5-7dfe-413a-8d72-0f6b5fa214fe" />
-
-
-
 🔑 Roles in the System
 
 👨‍🌾 Farmer → Harvests, refrigerates, inspects milk
-
 🚚 Transporter → Picks up & ships
-
 🏭 Bottling Farm → Inspects, bottles, packs, delivers
-
 🏪 Distributor → Sells packaged milk
-
 🛒 Consumer → Buys & verifies authenticity
 
 🌍 Deployed Contract on Rinkeby
@@ -111,18 +82,19 @@ Contract ID: 0x84E8edF4072165f86EF729B21E55656Bfdea1f91
 
 Transaction ID: 0x45b106f553e9e94326b8cf842253dd506c913129f315fbe0c94f45be65d0af82
 
-Etherscan View: Click Here
+View on Etherscan
 
 👨‍💻 Author
 
 S. Nithin
 
-Publications in IJCRT & MAT Journals
+Publications in IJCRT (2025) & MAT Journals (2025)
+
+📧 Email: bharatnithin@gmail.com
+
+🌐 LinkedIn
+ | GitHub
 
 📜 License
 
 This project is licensed under the MIT License.
-
-
-
-
