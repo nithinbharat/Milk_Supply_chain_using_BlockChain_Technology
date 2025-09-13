@@ -73,19 +73,19 @@ truffle migrate
 The following screenshots demonstrate the successful execution of the blockchain-based milk supply chain system:
 
 1. **Smart Contract Deployment**  
-   ![Smart Contract Deployment](images/smart_contract_deployment.png)
+![Smart Contract Deployment (https://github.com/NithinBharat/MILK_SUPPLY_CHAIN_USING_BLOCKCHAIN/blob/main/images/smart_contract_deployment.png?raw=true)
 
 2. **Ganache Transaction Logs**  
-   ![Ganache Transaction Logs](images/ganache_transaction_logs.png)
+![Ganache Transaction Logs](https://github.com/NithinBharat/MILK_SUPPLY_CHAIN_USING_BLOCKCHAIN/blob/main/images/ganache_transaction_logs.png?raw=true)
 
 3. **MetaMask Transaction Authorization**  
-   ![MetaMask Transaction Authorization](images/metamask_transaction_authorization.png)
+   ![MetaMask Transaction Authorization](https://github.com/NithinBharat/MILK_SUPPLY_CHAIN_USING_BLOCKCHAIN/blob/main/images/metamask_transaction_authorization.png?raw=true)
 
 4. **Smart Contract Compilation**  
-   ![Smart Contract Compilation](images/smart_contract_compilation.png)
+![Smart Contract Compilation](https://github.com/NithinBharat/MILK_SUPPLY_CHAIN_USING_BLOCKCHAIN/blob/main/images/smart_contract_compilation.png?raw=true)
 
 5. **Final Blockchain Transaction**  
-   ![Final Blockchain Transaction](images/final_blockchain_transaction.png)
+![Final Blockchain Transaction](https://github.com/NithinBharat/MILK_SUPPLY_CHAIN_USING_BLOCKCHAIN/blob/main/images/final_blockchain_transaction.png?raw=true)
 
 🔑 Roles in the System
 
