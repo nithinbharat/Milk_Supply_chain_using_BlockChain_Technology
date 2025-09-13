@@ -1,0 +1,22 @@
+{
+  "name": "MilkyCHAIN",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Luca Agostini <parmesanking@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "2.4.0",
+    "truffle": "4",
+    "truffle-hdwallet-provider": "^1.0.8",
+    "truffle-privatekey-provider": "^1.1.0",
+    "ganache-cli": "^6.4.3"
+  },
+  "dependencies": {
+  }
+}
